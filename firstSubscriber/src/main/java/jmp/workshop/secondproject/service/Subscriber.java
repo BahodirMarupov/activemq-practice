@@ -1,4 +1,4 @@
-package jmp.workshop.thirdproject.subscriber;
+package jmp.workshop.secondproject.service;
 
 import static jmp.workshop.firstproject.common.Properties.TOPIC_NAME;
 
@@ -14,7 +14,7 @@ public class Subscriber {
 
   private final Logger logger = LoggerFactory.getLogger(Subscriber.class);
 
-  @JmsListener(destination = TOPIC_NAME, containerFactory = "DurableJmsTopicFactory")
+  @JmsListener(destination = TOPIC_NAME, containerFactory = "JmsTopicFactory")
   public void receiveMessage(ActiveMQTextMessage message) {
     try {
       logger.info("Message '{}' received from topic '{}'", message.getText(), TOPIC_NAME);
@@ -22,4 +22,5 @@ public class Subscriber {
       logger.error("Exception while receiving message to topic '{}' : {}", TOPIC_NAME, e.getMessage());
     }
   }
+
 }

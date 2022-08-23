@@ -1,5 +1,6 @@
 package jmp.workshop.thirdproject.config;
 
+import jmp.workshop.firstproject.common.Properties;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -24,7 +25,7 @@ public class ActiveMqConfiguration {
     activeMQConnectionFactory.setBrokerURL(brokerUrl);
     activeMQConnectionFactory.setUserName(username);
     activeMQConnectionFactory.setPassword(password);
-    activeMQConnectionFactory.setClientID("DurableSub");
+    activeMQConnectionFactory.setClientID(Properties.CLIENT_ID);
     return activeMQConnectionFactory;
   }
 

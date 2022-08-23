@@ -4,35 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3de683b-7c1e-4bbf-9e52-2f99558885f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/PublisherApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/common/Properties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/config/ActiveMqConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/publisher/IPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/publisher/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstSubscriber/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/FirstSubscriberApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/config/ActiveMqConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/subcriber/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstSubscriber/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondSubscriber/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/SecondSubscriberApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/config/ActiveMqConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/subscriber/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondSubscriber/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="a3de683b-7c1e-4bbf-9e52-2f99558885f3" name="Changes" comment="Task 1 done">
+      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/service/IProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/service/impl/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/service/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/PublisherApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/PublisherApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/common/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/common/Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/config/ActiveMqConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/config/ActiveMqConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/publisher/IPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/service/IPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/publisher/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/main/java/jmp/workshop/firstproject/service/impl/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/config/ActiveMqConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/config/ActiveMqConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/subcriber/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/firstSubscriber/src/main/java/jmp/workshop/secondproject/service/Subscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/config/ActiveMqConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/config/ActiveMqConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/subscriber/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/secondSubscriber/src/main/java/jmp/workshop/thirdproject/service/Subscriber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,31 +56,32 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;adopt-11&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "jdk.selected.JAVA_MODULE": "adopt-11",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="jmp.workshop.thirdproject.config" />
       <recent name="jmp.workshop.secondproject.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecondSubscriberApp">
+  <component name="RunManager" selected="Application.FirstSubscriberApp">
     <configuration name="FirstSubscriberApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jmp.workshop.secondproject.FirstSubscriberApp" />
       <module name="firstsubscriber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jmp.workshop.secondproject.subcriber.*" />
+          <option name="PATTERN" value="jmp.workshop.secondproject.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,7 +107,7 @@
       <module name="secondsubscriber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jmp.workshop.secondproject.subcriber.*" />
+          <option name="PATTERN" value="jmp.workshop.secondproject.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,8 +131,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SecondSubscriberApp" />
-        <item itemvalue="Application.FirstSubscriberApp" />
         <item itemvalue="Application.PublisherApp" />
+        <item itemvalue="Application.FirstSubscriberApp" />
         <item itemvalue="Application.SecondProjectApplication" />
       </list>
     </recent_temporary>
@@ -160,6 +146,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660988530967</updated>
     </task>
+    <task id="LOCAL-00001" summary="Task 1 done">
+      <created>1661284124892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661284124892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,5 +166,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Task 1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 1 done" />
   </component>
 </project>

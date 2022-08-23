@@ -25,4 +25,11 @@ public class ActiveMqConfiguration {
     return factory;
   }
 
+  @Bean("JmsQueueFactory")
+  public DefaultJmsListenerContainerFactory jmsQueueFactory() {
+    DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
+    factory.setConnectionFactory(connectionFactory);
+    return factory;
+  }
+
 }

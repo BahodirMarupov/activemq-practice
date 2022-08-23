@@ -1,7 +1,8 @@
 package jmp.workshop.firstproject;
 
 import javax.annotation.PostConstruct;
-import jmp.workshop.firstproject.publisher.IPublisher;
+import jmp.workshop.firstproject.service.IProducer;
+import jmp.workshop.firstproject.service.IPublisher;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,9 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PublisherApp {
 
   private final IPublisher publisher;
+  private final IProducer producer;
 
-  public PublisherApp(IPublisher publisher) {
+  public PublisherApp(IPublisher publisher, IProducer producer) {
     this.publisher = publisher;
+    this.producer = producer;
   }
 
   public static void main(String[] args) {
@@ -23,5 +26,8 @@ public class PublisherApp {
     //Task 1 (to test durability of subscribers, need run publisher service firstly )
     publisher.sendMessageToTopic("first message");
     publisher.sendMessageToTopic("second message");
+
+    //Task 2
+    producer.sendMessage("Hello!");
   }
 }

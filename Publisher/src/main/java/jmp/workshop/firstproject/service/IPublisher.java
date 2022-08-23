@@ -1,4 +1,4 @@
-package jmp.workshop.firstproject.publisher;
+package jmp.workshop.firstproject.service;
 
 public interface IPublisher {
 
