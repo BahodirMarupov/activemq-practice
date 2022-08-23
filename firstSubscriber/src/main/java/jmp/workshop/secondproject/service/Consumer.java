@@ -37,4 +37,15 @@ public class Consumer {
       logger.error("Exception while receiving message from queue '{}' : {}", Properties.QUEUE_NAME, e.getMessage());
     }
   }
+
+  @JmsListener(destination = Properties.FIRST_QUEUE_IN_VT, containerFactory = "JmsQueueFactory")
+  public void receiveMessageFromVirtualTopic(Message message) {
+    try {
+      String text = ((TextMessage) message).getText();
+      logger.info("Message '{}' received from virtual topic '{}' with consumer '{}'",
+          text, Properties.VIRTUAL_TOPIC_NAME, Properties.FIRST_QUEUE_IN_VT);
+    } catch (JMSException e) {
+      logger.error("Exception while receiving message from virtual topic '{}' : {}", Properties.VIRTUAL_TOPIC_NAME, e.getMessage());
+    }
+  }
 }

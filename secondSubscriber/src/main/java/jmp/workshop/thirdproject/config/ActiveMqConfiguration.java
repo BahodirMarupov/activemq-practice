@@ -25,7 +25,6 @@ public class ActiveMqConfiguration {
     activeMQConnectionFactory.setBrokerURL(brokerUrl);
     activeMQConnectionFactory.setUserName(username);
     activeMQConnectionFactory.setPassword(password);
-    activeMQConnectionFactory.setClientID(Properties.CLIENT_ID);
     return activeMQConnectionFactory;
   }
 
@@ -35,6 +34,14 @@ public class ActiveMqConfiguration {
     factory.setConnectionFactory(connectionFactory());
     factory.setPubSubDomain(true);
     factory.setSubscriptionDurable(true);
+    factory.setClientId(Properties.DURABLE_SUB_CLIENT_ID);
+    return factory;
+  }
+
+  @Bean("JmsQueueFactory")
+  public DefaultJmsListenerContainerFactory jmsQueueFactory() {
+    DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
+    factory.setConnectionFactory(connectionFactory());
     return factory;
   }
 

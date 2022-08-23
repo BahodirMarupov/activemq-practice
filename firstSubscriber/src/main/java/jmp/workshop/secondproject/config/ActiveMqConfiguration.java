@@ -1,6 +1,7 @@
 package jmp.workshop.secondproject.config;
 
 import javax.jms.ConnectionFactory;
+import jmp.workshop.firstproject.common.Properties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;

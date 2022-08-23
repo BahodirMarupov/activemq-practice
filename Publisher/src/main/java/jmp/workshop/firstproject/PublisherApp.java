@@ -22,12 +22,17 @@ public class PublisherApp {
   }
 
   @PostConstruct
-  public void run(){
+  public void run() throws Exception {
     //Task 1 (to test durability of subscribers, need run publisher service firstly )
     publisher.sendMessageToTopic("first message");
     publisher.sendMessageToTopic("second message");
+    Thread.sleep(2000);
 
     //Task 2
     producer.sendMessage("Hello!");
+    Thread.sleep(2000);
+
+    //Task 3
+    publisher.sendMessageToVirtualTopic("Hello from virtual topic!");
   }
 }

@@ -4,4 +4,5 @@ public interface IPublisher {
 
   void sendMessageToTopic(String message);
 
+  void sendMessageToVirtualTopic(String message);
 }
