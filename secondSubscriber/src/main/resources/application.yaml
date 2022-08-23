@@ -1,0 +1,11 @@
+server:
+  port: 8083
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    topic-name: testTopic
+  application:
+    name: secondSub
